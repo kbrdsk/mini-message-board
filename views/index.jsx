@@ -1,8 +1,11 @@
 const React = require("react");
 
+function Index(props) {
+	return <div>{props.messages.map(renderMessage)}</div>;
+}
 
-function Index(props){
-	return <div>Messages go here!</div>
+function renderMessage(message) {
+	return <div>{`${message.added} ${message.user}: ${message.text}`}</div>;
 }
 
 module.exports = Index;
