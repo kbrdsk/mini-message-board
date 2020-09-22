@@ -5,4 +5,4 @@ function Index(props){
 	return <div>Messages go here!</div>
 }
 
-modules.exports = Index;
+module.exports = Index;
